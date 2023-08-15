@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root">
+        <h1>hello</h1>
+    </div>
+    <!-- creating element using js -->
+    <script>
+       const heading2 = document.createElement('h2');
+       heading2.innerHTML= 'hello using js';
+       const roots = document.getElementById('root');
+    //    console.log(roots[0]);
+       roots.appendChild(heading2);
+       const heading3 = document.createElement('h3');
+       heading3.innerHTML= 'hello 2 using js';
+       const root2 = document.getElementById('root');
+    //    console.log(root2[0]);
+       root2.appendChild(heading3);
+    </script>
+</body>
+
+</html>
